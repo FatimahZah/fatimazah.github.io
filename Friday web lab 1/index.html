@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fryday Lab</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+    <div class="newclass">
+        <p id="para">This is a Paragraph</p>
+        <button id="btn">Click me</button>
+    </div>
+
+    <!--Javascript-->
+    <script>
+        // accessing a paragraph element
+        const p = document.getElementById('para');
+        const btn = document.getElementById('btn')
+        p.style.color = "red";
+        p.style.fontSize = "40px";
+        console.log(p)
+        p.classlist.add('active')
+        console.log(btn)
+        btn.addEventListener('click', ()=>{
+            console.log('clicked')
+        })
+    </script>
+</body>
+</html>
